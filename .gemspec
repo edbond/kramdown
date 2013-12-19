@@ -9,7 +9,7 @@ kramdown is yet-another-markdown-parser but fast, pure Ruby,
 using a strict syntax definition and supporting several common extensions.
 EOF
 
-PKG_FILES = FileList.new([
+PKG_FILES = Dir.glob([
     'Rakefile',
     'setup.rb',
     'COPYING', 'README.md', 'AUTHORS',
