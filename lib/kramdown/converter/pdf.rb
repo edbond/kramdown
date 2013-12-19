@@ -571,7 +571,7 @@ module Kramdown
       # Patch the pdf_document.outline object to accept arbitrary destinations.
       def patch_outline_object
         def (@pdf.outline).create_outline_item(title, options)
-          outline_item = ::Prawn::OutlineItem.new(title, parent, options)
+          outline_item = ::PDF::Core::OutlineItem.new(title, parent, options)
 
           case options[:destination]
           when Integer
