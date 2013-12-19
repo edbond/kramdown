@@ -1,5 +1,7 @@
 # -*- ruby -*-
 
+require "bundler/gem_tasks"
+
 # load all optional developer libraries
 begin
   require 'rubygems'
